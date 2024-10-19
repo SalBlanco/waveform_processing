@@ -1,1 +1,12 @@
-# waveform_processing
+# Waveform Processing
+*This repository hosts one half of the waveform processing pipeline (magnitude estimator); waveform classifier available upon request.*
+
+Earthquake detection and seismic event characterization are critical to advancing our understanding of seismic phenomena and enhancing our preparedness for such events. Seismologists rely on a variety of methods for detecting and analyzing seismic waves, ranging from manual inspection to statistical and computational methods. While effective, these approaches can be time-consuming and may lack the sensitivity required to distinguish between nuanced waveforms, especially in a noisy data environment like seismology.
+
+Advancements in machine learning, and specifically deep learning, have opened up new avenues for seismic data analysis. Deep learning models, characterized by their ability to learn hierarchies of features from large datasets, present an opportunity to detect patterns that human eyes and traditional statistical methods cannot see. Among these models, Convolutional Neural Networks (CNNs) and Graph Neural Networks (GNNs) have shown particular promise due to their capacity to handle spatial and structural data effectively.
+
+In this research, we explore the application of CNNs and GNNs to comprehensive datasets from the Southern California Earthquake Data Center (SCEDC) and large event datasets from the Kiban Nyoshin Network (K-NET). We have two datasets from the SCEDC: the first comprising several million waveform records with P-wave, S-wave, and noise labels, and the second containing around 900,000 waveform readings accompanied by seismograph coordinates, magnitude labels, and more. The event-specific datasets from K-NET (over 1,000 observation stations on a 20-kilometer grid) consist of data from all seismographs within the detectable range of the event.
+
+We aim to demonstrate that these deep learning models can not only classify seismic events with high accuracy but also contribute to a more nuanced understanding of seismic signals. This has the potential to revolutionize the field of seismology, offering improvements in both the speed and reliability of seismic event detection and characterization.
+
+We also discuss the potential impact of the models on real-time monitoring systems, which are essential for early warning and rapid response initiatives. The advancement in deep learning techniques, as applied to seismic analysis, stands to greatly enhance the precision of event detection and depth estimations, making it a pivotal tool in mitigating the risks associated with earthquakes. Additionally, live data can be streamed directly into the models, providing real-time quake detection in microseconds.
